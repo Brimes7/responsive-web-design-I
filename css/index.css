@@ -67,8 +67,8 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 /* Start nav bar code */
 #container{
-	margin: 0 auto;
-	width: 1000px;
+    width: 100%;
+    max-width: 800px;
 }
 #navbar {
 	height: 50px;
@@ -150,4 +150,15 @@ footer{
 #copy{
 	text-align: center;
 }
-
+/* BEGIN MEDIA QUERY */
+@media(max-width: 500px){
+    #actionimg{
+        display:none;
+    }
+}
+/* BEGIN MEDIA AT 800px */
+@media(max-width: 800px){
+    #actionimg{
+        display:none;
+    }
+}
