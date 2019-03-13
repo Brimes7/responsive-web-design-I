@@ -29,6 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* adding line as test */
 body {
 	line-height: 1;
 }
@@ -63,36 +64,104 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-/* Adding this line as a test */
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Your code starts here! */
 /* Start nav bar code */
 #container{
-    width: 100%;
-    max-width: 800px;
+	max-width: 800px;
+	width: 100%;
 }
 #navbar {
-	height: 50px;
+	height: 80px;
 	background-color: lightgrey;
 	width: 100%;
 	vertical-align: middle;
-	padding-left: 20%;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 #navitems{
-	vertical-align: middle;
-	display: inline-block;
-	padding-right: 20px; 
+
 }
 #navitems a{
 	padding-right: 25px;
 }
 #navlogo{
 	vertical-align: middle;
-	display: inline-block; 
 }
 /* begin call to action area */
 #calltoaction{
@@ -100,31 +169,38 @@ h1, h2, h3, h4, h5 {
 	vertical-align: middle;
 	text-align: center;
 	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+
+
 }
 #actiontxt{
 	vertical-align: middle;
-	display: inline-block;
-	width: 47%;
+	margin-bottom: 25px;
 
 }
 #actionimg{
 	vertical-align: middle;
-	display: inline-block;
-	width: 47%;
 }
 #actiontxt h1{
 	font-size: 73px;
 }
+
 .wrapper{
 	vertical-align: middle;
 	margin: 25px 3px;
 	align-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
 
 }
 #feat, #about{
 	vertical-align: middle;
 	width: 47%;
-	display: inline-block;
 	padding-left: 5%;
 	margin-left: 3px;
 }
@@ -138,9 +214,7 @@ h1, h2, h3, h4, h5 {
 #service, #product, #vision{
 	vertical-align: middle;
 	width: 31%;
-	display: inline-block;
 	padding-left: 5%;
-	margin-left: 3px;
 }
 footer{
 	margin-left: 3px;
@@ -155,10 +229,28 @@ footer{
     #actionimg{
         display:none;
     }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color: green;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items:center;
+    }
 }
 /* BEGIN MEDIA AT 800px */
 @media(max-width: 800px){
     #actionimg{
         display:none;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color:red;
     }
 }
