@@ -333,4 +333,16 @@ footer{
 		width: 100%;
 		padding-bottom: 20px;
 	}
+	#feat, #about {
+		vertical-align: middle;
+		width: 100%;
+		margin-left: 3px;
+		margin-bottom: 10%;
+	}
+	#service, #product, #vision{
+		vertical-align: middle;
+		width: 100%;
+		margin-left: 3px;
+		margin-bottom: 10%;
+	}
 }
