@@ -1,3 +1,348 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* adding line as test */
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/* Start nav bar code */
+#container{
+	max-width: 80%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	height: 80px;
+	width: 80%;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+#navitems{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+}
+.navlogo{
+	vertical-align: middle;
+	margin-left: 41%;
+}
+#navitems a{
+	padding-right: 25px;
+}
+/* begin call to action area */
+#calltoaction{
+	margin-top: 100px;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: center;
+	align-content: center;
+}
+
+.actiontxt{
+	vertical-align: middle;
+	margin-bottom: 25px;
+}
+
+.actionimg{
+	vertical-align: middle;
+	margin: 0 auto;
+}
+.actiontxt h1{
+	font-size: 73px;
+}
+
+.wrapper{
+	vertical-align: middle;
+	margin: 25px 3px;
+	align-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#feat, #about {
+	vertical-align: middle;
+	width: 47%;
+	padding-left: 5%;
+	margin-left: 3px;
+}
+.middle-img{
+	width: 100%;
+	margin-top: 35px;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 35px;
+}
+#service, #product, #vision{
+	vertical-align: middle;
+	width: 31%;
+	padding-left: 5%;
+}
+footer{
+	margin-left: 3px;
+	padding-left: 5%;
+	margin-top: 25px;
+}
+#copy{
+	text-align: center;
+}
+/* BEGIN MEDIA QUERY */
+
+/* BEGIN MEDIA AT 800px */
+@media screen and (max-width: 800px){
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.navlogo{
+		margin-left: 35%;
+	}
+	nav {
+		width: 100%;
+		flex-direction: row;
+		background-color: white;
+		opacity: .9;
+		margin: 0px;
+		padding-top: 15px;
+	}
+    .actionimg{
+        display:none;
+    }
+	
+	#a, #b, #c, #d, #e, #f{
+		order: 1;
+		color:  rgb(1, 64, 136);
+		font-weight: bolder;
+	}
+	#g{
+		order: 0;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+    h1{
+        color:purple;
+}
+}
+/* BEGIN 500px MEDIA */
+@media(max-width: 500px){
+    .actionimg{
+        display:none;
+	}
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
+    header{
+        flex-direction: column;
+		align-items: center;
+		margin-bottom: 50%;
+    }
+    h1{
+		color: green;
+		margin-top: 75%;
+	}
+	.navlogo{
+		margin-left: 29%;
+	}
+    .wrapper{
+        flex-direction: column;
+        align-items:center;
+	}
+	#a{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#b{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#c{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#d{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#e{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#f{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#g{
+		order: 0;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	#feat, #about {
+		vertical-align: middle;
+		width: 100%;
+		margin-left: 3px;
+		margin-bottom: 10%;
+	}
+	#service, #product, #vision{
+		vertical-align: middle;
+		width: 100%;
+		margin-left: 3px;
+		margin-bottom: 10%;
+	}
+}
