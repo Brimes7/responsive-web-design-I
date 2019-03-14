@@ -141,10 +141,9 @@ h1, h2, h3, h4, h5 {
 
 header {
 	height: 80px;
-	background-color: lightgrey;
 	width: 80%;
 	vertical-align: middle;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -163,7 +162,7 @@ header {
 }
 .navlogo{
 	vertical-align: middle;
-		margin-left: 41%;
+	margin-left: 41%;
 }
 #navitems a{
 	padding-right: 25px;
@@ -239,6 +238,9 @@ footer{
 		width: 80%;
 		margin: 0 auto;
 	}
+	.navlogo{
+		margin-left: 35%;
+	}
 	nav {
 		width: 100%;
 		flex-direction: row;
@@ -265,19 +267,70 @@ footer{
         color:purple;
 }
 }
+/* BEGIN 500px MEDIA */
 @media(max-width: 500px){
     .actionimg{
         display:none;
-    }
+	}
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
     header{
         flex-direction: column;
-        align-items: center;
+		align-items: center;
+		margin-bottom: 50%;
     }
     h1{
-        color: green;
-    }
+		color: green;
+		margin-top: 75%;
+	}
+	.navlogo{
+		margin-left: 29%;
+	}
     .wrapper{
         flex-direction: column;
         align-items:center;
+	}
+	#a{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#b{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#c{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#d{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#e{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#f{
+		order: 1;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	#g{
+		order: 0;
+		width: 100%;
+		padding-bottom: 20px;
 	}
 }
